@@ -6,7 +6,7 @@
     default="True" />
   <param
     name="robot_description"
-    command="$(find xacro)/xacro.py '$(find social_robot_description)/urdf/social_robot.urdf.xacro'" />
+    command="$(find xacro)/xacro --check-order '$(find social_robot_description)/urdf/social_robot.urdf.xacro'" />
   <param
     name="use_gui"
     value="$(arg gui)" />
